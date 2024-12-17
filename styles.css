@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Yatra';
+    src: url('Fonts/YatraOne-Regular.ttf') format('truetype');
+}
+
+:root{
+    --font-family: 'Yatra', sans-serif;
+    --blue: #3D5588;
+    --gold: #AC936E;
+    --red: #B44B65;
+    --bg: #EFDECF;
+    --space: 25px;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: var(--font-family);
+    color: var(--blue);
+}
+
+.landscape,.mobile{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 9;
+    pointer-events: none;
+    width: 100vw;
+    height:100vh;
+    
+}
+
+.landscape{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+main{
+  min-height: calc(100vh - (var(--space) * 2));
+  padding:var(--space);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+svg rect{
+    opacity: 0;
+    animation: glitter 1s linear;
+    animation-fill-mode: forwards;
+}
+svg rect:nth-child(3n){
+    animation: glitter 0.7s linear;
+    animation-fill-mode: forwards;
+}
+svg rect:nth-child(4n){
+    animation: glitter 0.3s linear;
+    animation-fill-mode: forwards;
+}
+svg rect:nth-child(4n){
+    animation: glitter 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes glitter {
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media(max-width: 768px){
+    .landscape{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }  
+}
