@@ -39,6 +39,7 @@ main{
   min-height: calc(100vh - (var(--space) * 2));
   padding:var(--space);
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
