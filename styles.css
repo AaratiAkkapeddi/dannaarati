@@ -29,6 +29,7 @@ marquee{
 h1{
     font-size: var(--font-size-large);
     font-weight: normal;
+    margin:0;
 }
 #bug{
     position: fixed;
@@ -41,7 +42,7 @@ h1{
     opacity: 0.5;
 }
 body{
-
+    margin:0;
     font-size: var(--font-size-body);
     background-color: var(--bg);
     font-family: var(--font-family);
@@ -78,56 +79,49 @@ main{
 }
 
 svg rect{
-    opacity: 0;
-    animation: glitter 3s linear;
-    animation-fill-mode: forwards;
-}
-svg rect:nth-child(3n){
     animation: glitter 1s linear;
-    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+}
+svg rect:nth-child(2){
+    animation: glitter 1s linear;
+    animation-delay: 0.5s;
+}
+svg rect:nth-child(3){
+    animation: glitter 1s linear;
+    animation-delay: 1s;
+
 }
 svg rect:nth-child(4n){
-    animation: glitter 0.8s linear;
-    animation-fill-mode: forwards;
+    animation: glitter 1s linear;
+    animation-delay: 1s;
+
 }
-svg rect:nth-child(4n){
-    animation: glitter 2s linear;
-    animation-fill-mode: forwards;
+svg rect:nth-child(5){
+    animation: glitter 1s linear;
+    animation-delay: 0.2s;
+
+}
+svg rect:nth-child(6){
+    animation: glitter 1s linear;
+    animation-delay: 0.5s;
+
+}
+svg rect:nth-child(7){
+    animation: glitter 1s linear;
+    animation-delay: 0.3s;
+
 }
 
-marquee:nth-child(even){
-    animation: glitter 1s infinite;
-    animation-fill-mode: alternate;
-}
-marquee:nth-child(odd){
-    animation: glitter 1s infinite;
-    animation-delay:0.5s;
-    animation-fill-mode: alternate;
-}
-marquee:nth-child(5){
-    animation: glitter 1s infinite;
-    animation-delay:0.3s;
-    animation-fill-mode: alternate;
-}
-marquee:nth-child(7){
-    animation: glitter 1s infinite;
-    animation-delay:0.5s;
-    animation-fill-mode: alternate;
-}
-marquee:nth-child(2){
-    animation: glitter 1s infinite;
-    animation-delay:0.8s;
-    animation-fill-mode: alternate;
-}
 
 @keyframes glitter {
-    25% {
-        opacity: 1;
+    0%{
+       opacity: 1;;
     }
-    50% {
+    75%{
         opacity: 0;
     }
-    100% {
+    100%{
         opacity: 1;
     }
 }
@@ -143,6 +137,12 @@ marquee:nth-child(2){
 }
 
 @media(max-width: 768px){
+    :root{
+        --space: 15px;
+        --font-size-large: 25px;
+        --font-size-body: 16px;
+        --font-size-small: 12px;
+    }
     .landscape{
         display: none;
     }
