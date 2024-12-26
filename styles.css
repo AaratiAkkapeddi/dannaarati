@@ -146,6 +146,10 @@ marquee:nth-child(2){
     .landscape{
         display: none;
     }
+    #bug{
+        height: 100vh;
+        width: auto;
+    }
     .mobile{
         display: block;
     }  
