@@ -1,6 +1,6 @@
 
 
-var colour="#B44B65"; // "random" can be replaced with any valid colour ie: "red"...
+var colour="random"; // "random" can be replaced with any valid colour ie: "red"...
 var sparkles=100;// increase of decrease for number of sparkles falling
 
 var x=ox=400;
@@ -244,6 +244,7 @@ function set_width() {
 
 function createDiv(height, width) {
 	var div=document.createElement("div");
+    div.classList.add("lil-sweet-potato")
 	div.style.position="absolute";
 	div.style.height=height+"px";
 	div.style.width=width+"px";

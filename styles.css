@@ -77,7 +77,9 @@ main{
   animation: fadeIn 2s linear;
   animation-fill-mode: forwards;
 }
-
+.lil-sweet-potato{
+    transform: scale(2);
+}
 svg rect{
     animation: glitter 1s linear;
     animation-delay: 0s;
