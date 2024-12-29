@@ -80,6 +80,9 @@ main{
 .lil-sweet-potato{
     transform: scale(2);
 }
+.lil-sweet-potato, .dot{
+    pointer-events: none;
+}
 svg rect{
     animation: glitter 1s linear;
     animation-delay: 0s;
