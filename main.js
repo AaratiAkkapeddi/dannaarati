@@ -1,4 +1,16 @@
+document.querySelector("#menu").addEventListener("click",function(){
+	let menu = document.querySelector("#menu");
+	let nav = document.querySelector("nav");
 
+	if(menu.classList.contains("open")){
+		menu.classList.remove("open")
+		nav.classList.remove("open")
+	}else{
+		menu.classList.add("open")
+		nav.classList.add("open")
+	}
+
+})
 
 var colour="random"; // "random" can be replaced with any valid colour ie: "red"...
 var sparkles=100;// increase of decrease for number of sparkles falling
