@@ -327,5 +327,7 @@ svg rect:nth-child(7){
     .gallery img{
         width: calc(80%);
     }
-   
+   .travel .two{
+    flex-direction: column;
+   }
 }
