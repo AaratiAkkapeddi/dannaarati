@@ -75,6 +75,25 @@ body{
     left: var(--space);
     position: fixed;
 }
+.corner:nth-child(2) svg{
+     width: 100%;
+     position: relative;
+     top: auto;
+     left: auto;
+}
+.corner:nth-child(2) a{
+    display: inline-block;
+    width: 150px;
+    position: fixed;
+    top: var(--space);
+    left: var(--space);
+    text-decoration: none;
+    border: none;
+    z-index: 99;
+}
+.corner:nth-child(2) a:hover svg *{
+    fill: var(--red);
+}
 
 .corner:nth-child(3) svg{
     bottom: var(--space);
@@ -241,7 +260,9 @@ svg rect:nth-child(7){
 }
 .photos img{
     width: calc(50% - (var(--space) * 2));
+    height: auto;
     display: inline-block;
+    align-self: center;
     margin:0 auto;
     margin-bottom: calc(var(--space) * 2)
 }
