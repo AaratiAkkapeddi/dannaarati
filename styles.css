@@ -330,4 +330,8 @@ svg rect:nth-child(7){
    .travel .two{
     flex-direction: column;
    }
+   .travel iframe{
+    margin-bottom: var(--space);
+    width: 100%;
+   }
 }
