@@ -280,6 +280,9 @@ svg rect:nth-child(7){
     height: 50vh;
     opacity: 0.8;
 }
+.intro-family{
+    margin-top: calc(var(--space) * 2);
+}
 .travel .two{
     margin-top: var(--space);
     display: flex;
@@ -368,4 +371,7 @@ svg rect:nth-child(7){
    .banner{
     width: calc(100% - var(--space));
    }
+   .intro-family{
+        margin-top: calc(var(--space) * 7);
+    }
 }
