@@ -336,12 +336,18 @@ svg rect:nth-child(7){
     #menu {
         width: 100px;
     }
+    .corner:nth-child(2) a{
+
+        width: 100px;
+
+    }
     nav{
         min-width: 50%;
     }
     .corner svg{
         width: 70px;
     }
+    
     .photos{
         padding-top:calc( var(--space) * 6)
     }
