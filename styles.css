@@ -410,4 +410,7 @@ a.bold-button {
     .q-a{
         max-width: calc(100% - var(--space) * 2);
     }
+    .home-img{
+        width: 150px;
+    }
 }
