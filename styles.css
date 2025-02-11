@@ -53,6 +53,7 @@ body{
     background-color: var(--bg);
     font-family: var(--font-family);
     color: var(--blue);
+    
 }
 
 .landscape,.mobile{
@@ -183,15 +184,19 @@ nav.open{
 }
 
 main{
-  min-height: calc(100vh - (var(--space) * 2));
+  height: calc(100vh - (var(--space) * 2));
   padding:var(--space);
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  overflow: scroll;
   opacity: 0;
   animation: fadeIn 2s linear;
   animation-fill-mode: forwards;
+}
+main.home{
+    justify-content: center; 
 }
 .lil-sweet-potato{
     transform: scale(2);
@@ -298,6 +303,7 @@ a.bold-button {
     width: 70%;
     margin: 0 auto;
     text-align: center;
+    padding-top: 100px;
 }
 .travel iframe{
     width: 50%;
@@ -324,6 +330,7 @@ a.bold-button {
 }
 .ceremony{
     text-align: center;
+    padding-top: 100px;
 }
 .home{
     text-align: center;
