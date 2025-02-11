@@ -408,7 +408,8 @@ a.bold-button {
         margin-top: calc(var(--space) * 7);
     }
     .q-a{
-        max-width: calc(100% - var(--space) * 2);
+        max-width: calc(80% - var(--space) * 2);
+        margin-top: 100px;
     }
     .home-img{
         width: 150px;
