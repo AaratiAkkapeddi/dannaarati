@@ -10,7 +10,7 @@
     --red: #b44b65;
     --bg: #EFDECF;
     --space: 25px;
-    --font-size-large: 45px;
+    --font-size-large: 35px;
     --font-size-body: 24px;
     --font-size-small: 12px;
 
@@ -43,6 +43,9 @@ h1{
     top:0;
     mix-blend-mode: multiply;
     opacity: 0.5;
+}
+.thank-you{
+    text-align: center;
 }
 body{
     margin:0;
@@ -218,7 +221,16 @@ svg rect:nth-child(7){
     animation-delay: 0.3s;
 
 }
-
+a.bold-button {
+    display: inline-block;
+    background-color: var(--red);
+    color: var(--bg);
+    padding: calc(var(--space)/2);
+    border: 1px solid var(--bg);
+}
+.bold-button:hover{
+    background-color: var(--blue);
+}
 
 #rsvp {
     position: absolute;
@@ -300,6 +312,15 @@ svg rect:nth-child(7){
 }
 .ceremony{
     text-align: center;
+}
+.home{
+    text-align: center;
+}
+.home-img{
+    width: 200px;
+    border-radius: 100%;
+    border: 3px double var(--blue);
+    outline: 1px solid var(--red);
 }
 @keyframes glitter {
     0%{
